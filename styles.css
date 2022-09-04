@@ -1,0 +1,15 @@
+body {
+background-color: rgb(202, 118, 202);
+max-width: 900px;
+margin: auto;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+table{
+    border: 1rem solid green;
+}
