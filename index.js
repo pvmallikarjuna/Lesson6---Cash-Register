@@ -53,7 +53,7 @@ function calculateChange (amountReturn){
 
 }
 
-const showMessage = (msg)=>{
+const showMessage(msg){
     errorMessage.style.display = "block"
     errorMessage.innerText = msg;
 }
