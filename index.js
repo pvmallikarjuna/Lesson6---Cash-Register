@@ -5,6 +5,7 @@ const checkButton = document.querySelector("#check");
 const errorMessage = document.querySelector("#message");
 const notes = document.querySelectorAll(".no-of-notes");
 
+
 const availNotes = [2000, 500, 200, 100, 50, 20, 10, 5, 2, 1];
 
 
@@ -53,7 +54,8 @@ function calculateChange (amountReturn){
 
 }
 
-const showMessage(msg){
+
+const showMessage = (msg)=>{
     errorMessage.style.display = "block"
     errorMessage.innerText = msg;
 }
