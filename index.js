@@ -30,10 +30,13 @@ const validateBill = ()=>{
     if(cashGiven.value !== ""){
     
         if(billAmount.value > 0){
-            if(Number(cashGiven.value) >= Number(billAmount.value)){
+            if(Number(cashGiven.value) > Number(billAmount.value)){
                 const amountReturn = cashGiven.value - billAmount.value;
                 calculateChange(amountReturn);
-            } else {
+            } else if(Number(cashGiven.value) === Number(billAmount.value)){
+                showMessage("Yayy! you are all settled up.");
+            }
+            else {
                 showMessage("Give cash greater than or equal to bill amount.")
             }
         } else {
